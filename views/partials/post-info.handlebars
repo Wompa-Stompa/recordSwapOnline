@@ -1,0 +1,29 @@
+<article class="post">
+    <div class="whole-post">
+        <div class="info-section">
+            <div class="post-name">
+                <a href="/post/{{id}}" class="links">{{title}}</a>
+            </div>
+            <div class="created-by">
+                <p id="comment-subtitle">
+                    Posted by <b>{{user.username}} </b> on <b>{{formatDate created_at}}</b>
+                </p>
+            </div>
+        </div>
+        <div class="content-section">
+            <p>      
+                
+                {{!-- <div class="col-md-12 ml-auto"><img class="modal-car-image" src="{{img_url}}" alt=""> --}}
+                
+                
+                {{!-- <br>{{image_url}} --}}
+                <br><img width="200" height="200" src={{img_url}}>
+                <br>Band: {{band_name}}
+                <br>Album: {{album_name}}
+                <br>Genre: {{genre}}
+                <br>Price: ${{price}}
+                <br>In Stock: {{stock}}
+            </p>
+        </div>
+    </div>
+</article>
